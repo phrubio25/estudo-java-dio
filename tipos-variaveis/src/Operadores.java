@@ -2,26 +2,26 @@ import java.sql.Date;
 
 public class Operadores {
     public static void main(String[] args) throws Exception {
-       
-        //(+) Operador unário de valor positivo
-        //(-) Operador unário de valor negativo
-        //(++) Operador unário de incremtento de valor
-        //(--) Operador unário de decremento de valor
-        //(!) Operador unário de negação
+        // == Quando desejamos verificar se uma variável é igual a outra
+        // != Quando desejamos verificar se uma variável é diferente da outra
+        // > Quando desejamos verificar se uma variável é maior que a outra
+        // >= Quando desejamos verificar se uma variável é maior ou igual que a outra
 
-        //O operador ternário é representado pelos simbolos ?: utilizados na seguinte estrutura de sintaxe:
-        int a, b;
+        int numero1 = 1;
+        int numero2 = 2;
 
-        a = 5;
-        b = 5;
+        boolean simNao = numero1 == numero2;
 
-        String resultado = a==b ? "verdadeiro": "falso";
+        System.out.println("Numero1 é igual ao Número2?" + simNao);
 
-        //if (a==b) 
-        //    resultado = "verdadeiro";
-        //else 
-        //    resultado = "falso";
+        simNao = numero1 != numero2;
 
-        System.out.println(resultado);
+        System.out.println("Numero1 é diferente ao Número2?" + simNao);
+
+        simNao = numero1 > numero2;
+
+        System.out.println("Numero1 é maior ao Número2?" + simNao);
+
+
     }
 }
